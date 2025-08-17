@@ -1,11 +1,11 @@
 {
   "name": "meusite-html",
   "version": "1.0.0",
+  "description": "Meu site em HTML puro",
+  "main": "index.js",
   "scripts": {
-    "build": "node build.js"
+    "start": "node index.js"
   },
-  "dependencies": {
-    "marked": "^9.1.6",
-    "slugify": "^1.6.6"
-  }
+  "author": "",
+  "license": "ISC"
 }
