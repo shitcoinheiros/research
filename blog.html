@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Câmbio Digital</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        .blog-post {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            margin-bottom: 30px;
+        }
+        .blog-post h1 {
+            color: var(--secondary);
+            margin-bottom: 20px;
+        }
+        .blog-post p, .blog-post ul, .blog-post ol {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+        .blog-post a {
+            color: var(--primary);
+        }
+        .article-list a {
+            display: block;
+            padding: 15px 20px;
+            border-bottom: 1px solid #eee;
+        }
+        .article-list a:hover {
+            background-color: var(--light);
+        }
+        .main-content {
+            padding-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">Câmbio<span>Digital</span></a>
+                <ul class="nav-links">
+                    <li><a href="index.html#servicos">Serviços</a></li>
+                    <li><a href="index.html#sobre">Sobre Nós</a></li>
+                    <li><a href="index.html#diferenciais">Diferenciais</a></li>
+                    <li><a href="blog.html">Blog</a></li> <li><a href="index.html#contato">Contato</a></li>
+                </ul>
+                <div class="mobile-menu">☰</div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-content container">
+        <h2 class="section-title">Últimos Artigos</h2>
+        <p class="section-subtitle">Conteúdo de qualidade para te ajudar a entender o mundo das finanças e câmbio.</p>
+        
+        <div id="articles-list" class="article-list">
+            </div>
+
+        <div id="article-content" class="blog-post" style="display:none;">
+            </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                </div>
+            <div class="copyright">
+                </div>
+        </div>
+    </footer>
+
+    <script src="js/markdown-converter.js"></script>
+    <script>
+        // Adapte o script do menu mobile e outros do index.html para o blog.html
+        document.querySelector('.mobile-menu').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
