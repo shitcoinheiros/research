@@ -1,0 +1,11 @@
+{
+  "name": "meusite-html",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "dependencies": {
+    "marked": "^9.1.6",
+    "slugify": "^1.6.6"
+  }
+}
