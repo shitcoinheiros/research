@@ -3,7 +3,7 @@ const path = require("path");
 const Parser = require("rss-parser");
 const slugify = require("slugify");
 
-const BLOGGER_RSS = "https://teublog.blogspot.com/feeds/posts/default?alt=rss";
+const BLOGGER_RSS = "const BLOGGER_RSS = "https://emfaseteste.blogspot.com/feeds/posts/default?alt=rss";
 const OUTPUT = path.join(__dirname, "../data/posts.json");
 
 (async () => {
