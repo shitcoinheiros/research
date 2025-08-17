@@ -4,7 +4,7 @@ const marked = require("marked");
 const slugify = require("slugify");
 
 const postsDir = path.join(__dirname, "posts");
-const distDir = path.join(__dirname, "dist");
+const distDir = path.join(__dirname, "public");
 const layoutFile = path.join(__dirname, "templates/layout.html");
 const indexFile = path.join(__dirname, "templates/index.html");
 
